@@ -1,3 +1,12 @@
+freetype (2.11.1+dfsg-1ubuntu0.4) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: DoS in CID font loader
+    - debian/patches/CVE-2026-95512.patch: * src/cid/cidload.c (cid_read_subrs):
+      Limit overlaps. in src/cid/cidload.c.
+    - CVE-2026-95512
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 05 Oct 2026 10:43:41 -0400
+
 freetype (2.11.1+dfsg-1ubuntu0.3) jammy-security; urgency=medium
 
   * SECURITY UPDATE: OOB write via font subglyph structures parsing
